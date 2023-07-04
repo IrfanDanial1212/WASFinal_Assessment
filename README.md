@@ -8,7 +8,7 @@ Group Members : Sitta
 | No. | Name | Matric Number |  
 |---|---|---|
 | 1. | Muhammad Irfan Danial Bin Baharim | 1927331 |
-| 2. | Muhammad Irfan Danial Bin Baharim | 1927331 |
+| 2. | Anwar bin Muzamir| 1928317 |
 | 3. | Muhammad Irfan Danial Bin Baharim | 1927331 |
 | 4. | Muhammad Irfan Danial Bin Baharim | 1927331 |
 
@@ -24,7 +24,7 @@ III. Authorization ( Name )
 
 IV. XSS and CSRF Prevention ( Name )
 
-V. Database Security Principles ( Name )
+V. Database Security Principles ( Anwar )
 
 VI. File Security Principles ( Name )
 
