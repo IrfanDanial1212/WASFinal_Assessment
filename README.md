@@ -22,7 +22,7 @@ II. Authentication ( Name )
 
 III. Authorization ( Name )
 
-IV. XSS and CSRF Prevention ( Name )
+IV. XSS and CSRF Prevention ( Azrul )
 
 V. Database Security Principles ( Anwar )
 
