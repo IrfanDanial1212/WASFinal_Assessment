@@ -10,17 +10,17 @@ Group Members : Sitta
 | 1. | Muhammad Irfan Danial Bin Baharim | 1927331 |
 | 2. | Anwar bin Muzamir| 1928317 |
 | 3. | Ikram Solehin bin Mohd Rizal | 2014303 |
-| 4. | Muhammad Irfan Danial Bin Baharim | 1927331 |
+| 4. | (Azrul) |  |
 
 <h5>Lecturer : Dr Muhamad Sadry Abu Seman </h5>
 
 ## Task Distribution
 
-I. Input Validation ( Name )
+I. Input Validation ( Irfan )
 
-II. Authentication ( Name )
+II. Authentication ( Ikram )
 
-III. Authorization ( Name )
+III. Authorization ( Ikram )
 
 IV. XSS and CSRF Prevention ( Azrul )
 
