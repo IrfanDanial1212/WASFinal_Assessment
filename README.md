@@ -9,7 +9,7 @@ Group Members : Sitta
 |---|---|---|
 | 1. | Muhammad Irfan Danial Bin Baharim | 1927331 |
 | 2. | Anwar bin Muzamir| 1928317 |
-| 3. | Muhammad Irfan Danial Bin Baharim | 1927331 |
+| 3. | Ikram Solehin bin Mohd Rizal | 2014303 |
 | 4. | Muhammad Irfan Danial Bin Baharim | 1927331 |
 
 <h5>Lecturer : Dr Muhamad Sadry Abu Seman </h5>
