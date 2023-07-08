@@ -84,6 +84,7 @@ authentication, authorization, XSS & CSRF prevention, database and file Security
 
 ## 5. Refferences
 
+1.https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
 
 
 
