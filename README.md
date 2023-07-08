@@ -55,7 +55,12 @@ To protect the user data who register in 5 Budak Lapar Web Application
 ## 2. Introduction
 5 Budak Lapar is Web Application that selling fast food while 
 pursuing sustainable development goal by allow the user to donate
-money that will be used to supply food for needies.
+money that will be used to supply food for needies. The web application
+require user to register the account and some of their details will 
+be taken and stored into database But the web application itself need 
+to be enhance the security to prevent the data from being stolen by the attacker. 
+The enhancement that will be impliment are input validation, 
+authentication, authorization, XSS & CSRF prevention, database and file Security principles.
 
 ## 3. Objective 
 
