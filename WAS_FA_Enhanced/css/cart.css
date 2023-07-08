@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #7effd8;
+    background-image: url("../image/bg.png");
+  }
+  
+  .header {
+    background-color: #192317;
+    padding: 1px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  /*Nav bar*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #9AD1BF;
+  }
+  
+  li {
+    float: left;
+  }
+
+  li2 {
+    float: right;
+  }
+
+  /*Nav Words*/
+  li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #72DDBA;
+    color: white;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+
+  li2 a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li2 a:hover:not(.active) {
+    background-color: #72DDBA;
+    color: white;
+  }
+  
+  li2 a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+
+  /* cart */
+
+  #cart-container table {
+      background-color: aliceblue;
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+  }
+
+  #cart-container table thead {
+      font-weight: 700;
+  }
+
+  #cart-container table thead td {
+      background: #fd8c66;
+      color: #fff;
+      border: none;
+      padding: 6px 0;
+  }
+
+ #cart-container table td{
+     border: 1px solid #b6b3b3;
+     text-align: center;
+ }
+
+ #cart-container table td::nth-child(1) {
+     width: 100px;
+ }
+
+ #cart-container table td:nth-child(2),
+ #cart-container table td:nth-child(3) {
+     width: 200px;
+ }
+
+ #cart-container table td:nth-child(4),
+ #cart-container table td:nth-child(5),
+ #cart-container table td:nth-child(6) {
+     width: 170px;
+ }
+
+ #cart-container table tbody img {
+     width: 100px;
+     height: 80px;
+     object-fit: cover;
+ }
+
+ #cart-container table tbody i {
+     color: #8d8c89;
+ }
+
+#cart-bottom .coupon > div,
+#cart-bottom .total > div {
+    background-color: aliceblue;
+    border: 1px solid #b6b3b3;
+}
+
+#cart-bottom .coupon h5, 
+#cart-bottom .total h5 {
+    background: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+    padding: 0 12px;
+}
+
+#cart-bottom .coupon input {
+    height: 44px;
+}
+
+#cart-bottom .coupon div>button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding: 13px 30px;
+    cursor: pointer;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+
+#cart-bottom .coupon div>button:hover {
+    background-color: #3a3833;
+}
+
+#cart-bottom .total div>div {
+    padding: 0 12px;
+}
+
+.second-hr {
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+
+#cart-bottom .total div>button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding: 13px 30px;
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#cart-bottom .total div>button:hover {
+    background-color: royalblue;
+    transition: 0.3s ease;
+}
+
+
+
+  /*Input*/
+  input[type=text],[type=tel],[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #000080;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #189AB4;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 15px;
+  }
+  
+  .column.side{
+    width:50%;
+  }
+
+  .column.middle{
+    width:50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column.side {
+      width: 100%;
+    }
+  }
