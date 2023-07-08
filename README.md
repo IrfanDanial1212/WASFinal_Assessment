@@ -77,6 +77,9 @@ authentication, authorization, XSS & CSRF prevention, database and file Security
 
 ### V. Database Security Principles 
 
+ <H3>Prepared Statement</H3>
+ 
+
 ### VI. File Security Principles 
 
 ## 5. Refferences
