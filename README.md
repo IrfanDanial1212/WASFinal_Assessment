@@ -82,7 +82,8 @@ III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intef
 
 ### II. Authentication<a name="authentic"></a> 
 
-<H4>Threat: Identity Theft: Attackers can steal user credentials through techniques like phishing, social engineering, or password guessing. Once they gain access to user accounts, they can exploit personal information, commit fraudulent activities, or even impersonate the user for further malicious purposes. </H4>
+<H4>Threat: Identity Theft
+Attackers can steal user credentials through techniques like phishing, social engineering, or password guessing. Once they gain access to user accounts, they can exploit personal information, commit fraudulent activities, or even impersonate the user for further malicious purposes. </H4>
 
 <H4>Method Encounter: 
 To hide error message that expose file location. Only comment this line to show the error during development.
