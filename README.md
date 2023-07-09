@@ -103,6 +103,16 @@ The pattern password will match a string if it meets the password requirements o
 $passwordPattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/";
 ```
 
+Adding pattern in HTML form to eliminate single quote (') to avoid any potential SQL Injection attack
+
+```
+<input type="text" name="usernameemail" pattern="^[^'].*$" id = "usernameemail" required value=""> <br>
+```
+
+```
+<input type="password" name="password" pattern="^[^'].*$" id = "password" required value=""> <br>
+```
+
 ### II. Authentication<a name="authentic"></a> 
 
 <H4>Threat: Identity Theft</H4> 
