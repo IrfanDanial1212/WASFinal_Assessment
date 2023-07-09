@@ -65,9 +65,9 @@ authentication, authorization, XSS & CSRF prevention, database and file Security
 ## 3. Objective<a name="objective"></a> 
 
 The objective of applying web application security in 5 Budak Lapar are; <br>
-<h5>I. Protect user data that register into 5 Budak Lapar Web Application</h5>  
-<h5>II. Protect user data that register into 5 Budak Lapar Web Application</h5>
-<h5>III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intefere the web application that may revoke the web application and steal the data </h5>
+I. Protect user data that register into 5 Budak Lapar Web Application
+II. Protect user data that register into 5 Budak Lapar Web Application
+III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intefere the web application that may revoke the web application and steal the data 
 
 
 
