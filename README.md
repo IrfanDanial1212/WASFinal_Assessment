@@ -23,6 +23,9 @@ II. Authentication ( Ikram )
 III. Authorization ( Ikram )
 
 IV. XSS and CSRF Prevention ( Azrul )
+XSS(Cross-Site Scripting) occurs when a web application allows untrusted user input to be included in its output without proper validation or sanitization. This vulnerability enables attackers to inject malicious scripts into web pages viewed by other users, leading to the execution of these scripts in their browsers. XSS attacks can be classified into three types: stored XSS, reflected XSS, and DOM-based XSS. The consequences of XSS attacks can range from stealing sensitive user information, session hijacking, defacement of websites, to even distributing malware. While, CSRF(Cross-Site Request Forgery) occurs when an attacker tricks a victim into executing unwanted actions on a web application on which the victim is authenticated. The attack takes advantage of the trust between the victim's browser and the targeted web application. By crafting a malicious HTML page or URL, the attacker can deceive the victim's browser into sending unauthorized requests to the vulnerable application, leading to actions performed on behalf of the victim without their knowledge or consent. CSRF attacks can perform actions such as changing user settings, making unauthorized purchases, or even manipulating sensitive data.
+
+Both XSS and CSRF are significant threats to web application security, and their impact can be far-reaching. It's crucial for web developers and application owners to understand these vulnerabilities and adopt appropriate security measures to mitigate the risks. This includes input validation, output encoding/sanitization, secure session management, and proper implementation of CSRF protection mechanisms.
 
 V. Database Security Principles ( Anwar )
 
