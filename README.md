@@ -141,6 +141,7 @@ the attak will alter existing record or add or drop the whole database, worst ca
 
 <H4>Method Encounter: Prepared Statement(Also known as parameterized Queries)</H4>
 
+The method used can prevent SQL injection attacks by separating the user-supplied data from the SQL query. The user-supplied data is not directly embedded in the SQL query, the data is passed to the database as a parameter. The database then binds the parameter to the appropriate placeholder in the SQL query. Which makes it will more difficult for thw attacker to inject malicious code.
 
 In Registration.php:
 ```
