@@ -141,7 +141,15 @@ else{
 
 1. Security Journey/HackEDU Team. (2020, February 11). How to prevent SQL Injection Vulnerabilities: How Prepared Statements Work. Securityjourney.com; Security Journey. 
 https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
-2.
+2. myPHPnotes. (2017). PHP Security - Directory Traversal Example and Prevention [YouTube Video]. In YouTube.
+https://www.youtube.com/watch?v=ZYbU9_cksUs <br>
+3.TECHINSPEC. (2020). SQL Injection PHP Example | How to prevent SQL injection in PHP? [YouTube Video]. In YouTube.
+https://www.youtube.com/watch?v=4o4BABR0Iho <br>
+
+
+‌
+
+‌
 
 
 
