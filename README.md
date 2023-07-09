@@ -136,7 +136,8 @@ By validate the token on the server-side before processing the request will help
 ### V. Database Security Principles<a name="data"></a>
 
 <H4>Threat: SQL Injection</H4>
-Code injection technique that attacker use to manipulate data driven web application by inserting malicious SQL statemets into text field to execute the injection. Similar to XSS but more focusing to database server.
+Code injection technique that attacker use to manipulate data driven web application by inserting malicious SQL statemets into text field to execute the injection. Similar to XSS but more focusing to database server. The effect of
+the attak will alter existing record or add or drop the whole database, worst cases the database got steal.
 
 <H4>Method Encounter: Prepared Statement</H4>
 
