@@ -31,17 +31,17 @@ VI. File Security Principles ( Anwar )
 ## Table of Contents
 1. [Title of Web Application](#title)
 2. [Introduction](#introduction)
-3. [Objective](#)
-4. [Enhancement](#)
+3. [Objective](#objective)
+4. [Enhancement](#enhancement)
    
-    I. [Input Validation](#) <br>
-    II. [Authentication](#) <br>
-    III. [Authorization](#) <br>
-    IV. [XSS and CSRF Prevention](#) <br>
-    V. [Database Security Principles](#) <br>
-    VI. [File Security Principles](#) <br>
+    I. [Input Validation](#iv) <br>
+    II. [Authentication](#authentic) <br>
+    III. [Authorization](#authorize) <br>
+    IV. [XSS and CSRF Prevention](#xss/csrf) <br>
+    V. [Database Security Principles](#data) <br>
+    VI. [File Security Principles](#file) <br>
 
-6. Refferences(#)
+6. [Refferences](#ref)
 
 
 
@@ -110,7 +110,7 @@ Code injection technique that attacker use to manipulate data driven web applica
 
 <H4>Method Encounter: ______ </H4>
 
-## 5. Refferences
+## 5. Refferences<a name="ref"></a>
 
 1.https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
 
