@@ -145,6 +145,41 @@ Attackers may gain access to sensitive data, such as confidential documents, cus
 
 <H4>Method Encounter:</H4>
 
+```
+if(isset($_POST["submit"])){
+  $usernameemail = $_POST["usernameemail"];
+  $password = $_POST["password"];
+  $result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$usernameemail'");
+
+  if(mysqli_num_rows($result) == "1"){
+    $row = mysqli_fetch_assoc($result);
+    $storedPassword = $row['password'];
+
+    // Check password from login and database
+    if(password_verify($password, $storedPassword)){
+      session_start();
+      // Store username and password in session variables
+      $_SESSION["username"] = $usernameemail;
+      $_SESSION["password"] = $password;
+
+      $_SESSION["login"] = true;
+      $_SESSION["id"] = $row["id"];
+      header("Location: home.php");
+    }
+    else{
+
+      echo"<script> alert('Wrong Password'); </script>";
+    }
+    
+  }
+  else{
+    echo "<script> alert('User Not Registered'); </script>";
+  }
+  
+
+}
+```
+
 
 ### IV. XSS and CSRF Prevention<a name="xss/csrf"></a> 
 
