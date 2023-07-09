@@ -31,17 +31,17 @@ VI. File Security Principles ( Anwar )
 ## Table of Contents
 1. [Title of Web Application](#title)
 2. [Introduction](#introduction)
-3. [Objective]
-4. [Enhancement]
+3. [Objective](#)
+4. [Enhancement](#)
    
-    I. [Input Validation] <br>
-    II. [Authentication] <br>
-    III. [Authorization] <br>
-    IV. [XSS and CSRF Prevention] <br>
-    V. [Database Security Principles] <br>
-    VI. [File Security Principles] <br>
+    I. [Input Validation](#) <br>
+    II. [Authentication](#) <br>
+    III. [Authorization](#) <br>
+    IV. [XSS and CSRF Prevention](#) <br>
+    V. [Database Security Principles](#) <br>
+    VI. [File Security Principles](#) <br>
 
-6. Refferences
+6. Refferences(#)
 
 
 
@@ -62,31 +62,31 @@ to be enhance the security to prevent the data from being stolen by the attacker
 The enhancement that will be impliment are input validation, 
 authentication, authorization, XSS & CSRF prevention, database and file Security principles.
 
-## 3. Objective 
+## 3. Objective<a name="objective"></a> 
 
 
-## 4. Enhancement
+## 4. Enhancement<a name="enhancement"></a>
 
-### I. Input Validation 
-
-<H4>Threat: ______ </H4>
-
-<H4>Method Encounter: ______ </H4>
-
-### II. Authentication 
+### I. Input Validation<a name="iv"></a> 
 
 <H4>Threat: ______ </H4>
 
 <H4>Method Encounter: ______ </H4>
 
-### III. Authorization 
+### II. Authentication<a name="authentic"></a> 
+
+<H4>Threat: ______ </H4>
+
+<H4>Method Encounter: ______ </H4>
+
+### III. Authorization<a name="authorize"></a> 
 
 <H4>Threat: ______ </H4>
 
 <H4>Method Encounter: ______ </H4>
 
 
-### IV. XSS and CSRF Prevention 
+### IV. XSS and CSRF Prevention<a name="xss/csrf"></a> 
 
 <H4>Threat: XSS and CSRF</H4>
 
@@ -96,7 +96,7 @@ Both XSS and CSRF are significant threats to web application security, and their
 
 <H4>Method Encounter: ______ </H4>
 
-### V. Database Security Principles 
+### V. Database Security Principles<a name="data"></a>
 
 <H4>Threat: SQL Injection</H4>
 Code injection technique that attacker use to manipulate data driven web application by inserting malicious SQL statemets into text field to execute the injection. Similar to XSS but more focusing to database server.
@@ -104,7 +104,7 @@ Code injection technique that attacker use to manipulate data driven web applica
 <H4>Method Encounter: Prepared Statement</H4>
  
 
-### VI. File Security Principles 
+### VI. File Security Principles<a name="file"></a>
 
 <H4>Threat: _________ </H4>
 
