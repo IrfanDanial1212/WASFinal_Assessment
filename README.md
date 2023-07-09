@@ -78,7 +78,22 @@ III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intef
 
 <H4>Threat: Identity Theft </H4>
 
-<H4>Method Encounter </H4>
+<H4>Method Encounter: Validate late and early using regex(whitelist) </H4>
+
+<H5>Validate Early</H5>
+
+Adding pattern in HTML form to eliminate single quote (') to avoid any potential SQL Injection attack
+
+```
+<input type="text" name="usernameemail" pattern="^[^'].*$" id = "usernameemail" required value=""> <br>
+```
+
+```
+<input type="password" name="password" pattern="^[^'].*$" id = "password" required value=""> <br>
+```
+
+<H5>Validate Late</H5>
+
 The pattern for name will match a string if it contains only alphabetic characters and whitespace, allowing for an empty string as well.
 
 ```
@@ -103,15 +118,7 @@ The pattern password will match a string if it meets the password requirements o
 $passwordPattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/";
 ```
 
-Adding pattern in HTML form to eliminate single quote (') to avoid any potential SQL Injection attack
 
-```
-<input type="text" name="usernameemail" pattern="^[^'].*$" id = "usernameemail" required value=""> <br>
-```
-
-```
-<input type="password" name="password" pattern="^[^'].*$" id = "password" required value=""> <br>
-```
 
 ### II. Authentication<a name="authentic"></a> 
 
