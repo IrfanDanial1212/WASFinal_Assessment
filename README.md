@@ -353,6 +353,10 @@ https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilitie
 https://www.youtube.com/watch?v=ZYbU9_cksUs <br>
 3. TECHINSPEC. (2020). SQL Injection PHP Example | How to prevent SQL injection in PHP? [YouTube Video]. In YouTube.
 https://www.youtube.com/watch?v=4o4BABR0Iho <br>
+4. Input Validation - OWASP Cheat Sheet Series. (2021). Owasp.org.
+ https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+
+‌
 
 
 ‌
