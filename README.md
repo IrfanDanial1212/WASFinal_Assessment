@@ -102,7 +102,12 @@ Both XSS and CSRF are significant threats to web application security, and their
 Code injection technique that attacker use to manipulate data driven web application by inserting malicious SQL statemets into text field to execute the injection. Similar to XSS but more focusing to database server.
 
 <H4>Method Encounter: Prepared Statement</H4>
- 
+...
+$name = mysqli_real_escape_string($conn, $name);
+  $username = mysqli_real_escape_string($conn, $username);
+  $email = mysqli_real_escape_string($conn, $email);
+  $password = mysqli_real_escape_string($conn, $password);
+...
 
 ### VI. File Security Principles<a name="file"></a>
 
@@ -118,7 +123,7 @@ To view the donate and insert cart pages, user need to login or register first o
 
 ## 5. Refferences<a name="ref"></a>
 
-1.Security Journey/HackEDU Team. (2020, February 11). How to prevent SQL Injection Vulnerabilities: How Prepared Statements Work. Securityjourney.com; Security Journey. 
+1. Security Journey/HackEDU Team. (2020, February 11). How to prevent SQL Injection Vulnerabilities: How Prepared Statements Work. Securityjourney.com; Security Journey. 
 https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
 2.
 
