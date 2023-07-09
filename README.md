@@ -85,27 +85,16 @@ III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intef
 <H4>Threat: Identity Theft: Attackers can steal user credentials through techniques like phishing, social engineering, or password guessing. Once they gain access to user accounts, they can exploit personal information, commit fraudulent activities, or even impersonate the user for further malicious purposes. </H4>
 
 <H4>Method Encounter: 
+To hide error message that expose file location. Only comment this line to show the error during development.
+
 ```
 <?php
-session_start();
-
 // Set error reporting to hide warnings
 error_reporting(0);
+```
+Session
 
-$conn = mysqli_connect("localhost", "root", "", "webappsecfinal");
-
-// Display token if needed
-/* if (isset($_SESSION['token'])) {
-    $token = $_SESSION['token'];
-    echo "Session Token: " . $token;
- else {
-    echo "Session Token not set.";
-} */
-
-if (mysqli_connect_errno()) {
-    die("Failed to connect to database: " . mysqli_connect_error());
-}
-
+```
 // Set the session timeout period in seconds (2 minutes)
 $sessionTimeout = 120;
 
