@@ -110,6 +110,29 @@ By using a predefined function named 'htmlspecialchars' which will read all the 
 
 <H5>Use CSRF Token</H5>
 
+CSRF Token is one of the prevention method for CSRF attacks where the web application will generate a unique CSRF token for each user session and include it as a hidden field or header in each form or request that modifies data.
+
+In Comments.php:
+```
+if (!isset($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Validate the CSRF token
+    if (!empty($_POST['csrf_token']) && hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+<User Codes>
+    } else {
+        // Invalid CSRF token
+        echo "Invalid CSRF token";
+        exit;
+    }
+
+<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+```
+
+By validate the token on the server-side before processing the request will help in avoiding attacker to create unauthorize changes to user account.
+
 ### V. Database Security Principles<a name="data"></a>
 
 <H4>Threat: SQL Injection</H4>
