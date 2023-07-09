@@ -83,7 +83,7 @@ III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intef
 ### II. Authentication<a name="authentic"></a> 
 
 <H4>Threat: Identity Theft</H4> 
-Attackers can steal user credentials through techniques like phishing, social engineering, or password guessing. Once they gain access to user accounts, they can exploit personal information, commit fraudulent activities, or even impersonate the user for further malicious purposes. </H4>
+Attackers can steal user credentials through techniques like phishing, social engineering, or password guessing. Once they gain access to user accounts, they can exploit personal information, commit fraudulent activities, or even impersonate the user for further malicious purposes. 
 
 <H4>Method Encounter: 
 To hide error message that expose file location. Only comment this line to show the error during development.
@@ -140,9 +140,10 @@ if (isset($_POST['submit'])) {
 
 ### III. Authorization<a name="authorize"></a> 
 
-<H4>Threat: Unauthorized Data Exposure: Attackers may gain access to sensitive data, such as confidential documents, customer information, or intellectual property. This can result in data breaches, privacy violations, financial loss, or damage to the organization's reputation. </H4>
+<H4>Threat: Unauthorized Data Exposure </H4>
+Attackers may gain access to sensitive data, such as confidential documents, customer information, or intellectual property. This can result in data breaches, privacy violations, financial loss, or damage to the organization's reputation. 
 
-<H4>Method Encounter: ______ </H4>
+<H4>Method Encounter:</H4>
 
 
 ### IV. XSS and CSRF Prevention<a name="xss/csrf"></a> 
