@@ -120,7 +120,6 @@ To view the donate and insert cart pages, user need to login or register first o
 
 1.Security Journey/HackEDU Team. (2020, February 11). How to prevent SQL Injection Vulnerabilities: How Prepared Statements Work. Securityjourney.com; Security Journey. 
 https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
-
 2.
 
 
