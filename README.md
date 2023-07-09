@@ -102,12 +102,14 @@ Both XSS and CSRF are significant threats to web application security, and their
 Code injection technique that attacker use to manipulate data driven web application by inserting malicious SQL statemets into text field to execute the injection. Similar to XSS but more focusing to database server.
 
 <H4>Method Encounter: Prepared Statement</H4>
-...
+
+In Registration.php:
+```
 $name = mysqli_real_escape_string($conn, $name);
-  $username = mysqli_real_escape_string($conn, $username);
-  $email = mysqli_real_escape_string($conn, $email);
-  $password = mysqli_real_escape_string($conn, $password);
-...
+$username = mysqli_real_escape_string($conn, $username);
+$email = mysqli_real_escape_string($conn, $email);
+$password = mysqli_real_escape_string($conn, $password);
+```
 
 ### VI. File Security Principles<a name="file"></a>
 
