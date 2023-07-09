@@ -16,7 +16,7 @@ Group Members : Sitta
 
 ## Task Distribution
 
-I. Input Validation ( Irfan )
+I. Input Validation ( Anwar )
 
 II. Authentication ( Ikram )
 
@@ -24,7 +24,7 @@ III. Authorization ( Ikram )
 
 IV. XSS and CSRF Prevention ( Azrul )
 
-V. Database Security Principles ( Irfan )
+V. Database Security Principles, Intoduction & objective ( Irfan )
 
 VI. File Security Principles ( Anwar )
 
