@@ -94,7 +94,7 @@ XSS(Cross-Site Scripting) occurs when a web application allows untrusted user in
 
 <H4>Method Encounter: Output Encoding and Use CSRF Token </H4>
 
-Output encoding is one of the method to prevent XSS attacks. This method will properly encode all user-generated content before displaying it in the HTML output. By using a predefined function named 'htmlspecialchars' which will read all the character input by user as a word and not a script or codes.
+Output encoding is one of the method to prevent XSS attacks. This method will properly encode all user-generated content before displaying it in the HTML output.
 
 In Comments.php:
 ```
@@ -103,6 +103,8 @@ function sanitizeInput($input)
     return htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
 }
 ```
+
+By using a predefined function named 'htmlspecialchars' which will read all the character input by user as a word and not a script or codes.
 
 ### V. Database Security Principles<a name="data"></a>
 
