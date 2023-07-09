@@ -109,6 +109,7 @@ Code injection technique that attacker use to manipulate data driven web applica
 <H4>Threat: _________ </H4>
 
 <H4>Method Encounter: ______ </H4>
+
 ## 5. Refferences
 
 1.https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
