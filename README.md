@@ -106,13 +106,20 @@ Code injection technique that attacker use to manipulate data driven web applica
 
 ### VI. File Security Principles<a name="file"></a>
 
-<H4>Threat: _________ </H4>
+<H4>Threat: Forceful browsing (directory enumeration and redirect workflow manipulation) </H4>
 
-<H4>Method Encounter: ______ </H4>
+Attacker will breach through the web application without login or registration 
+by searching unlinked pages. The attacker use to guess the directory of the web server which the files are stored. The attacker can bypass the web application workflow.
+
+<H4>Method Encounter: Applying authorization </H4>
+
+To view the donate and insert cart pages, user need to login or register first otherwise the web applicaton will not allow the user to view the page. Therefore, attacker cannot bypass the web application flow
+
 
 ## 5. Refferences<a name="ref"></a>
 
 1.https://www.securityjourney.com/post/how-to-prevent-sql-injection-vulnerabilities-how-prepared-statements-work <br>
+2.
 
 
 
