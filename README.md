@@ -122,6 +122,19 @@ by searching unlinked pages. The attacker use to guess the directory of the web 
 
 To view the donate and insert cart pages, user need to login or register first otherwise the web applicaton will not allow the user to view the page. Therefore, attacker cannot bypass the web application flow
 
+```
+<?php
+require 'config.php';
+if(!empty($_SESSION["id"])){
+  $id = $_SESSION["id"];
+  $result = mysqli_query($conn, "SELECT * FROM user WHERE id = $id");
+  $row = mysqli_fetch_assoc($result);
+}
+else{
+  header("Location: login.php");
+}
+?>
+```
 
 ## 5. Refferences<a name="ref"></a>
 
