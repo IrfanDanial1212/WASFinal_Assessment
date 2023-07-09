@@ -169,7 +169,7 @@ by searching unlinked pages. The attacker use to guess the directory of the web 
 
 To view the donate and insert cart pages, user need to login or register first otherwise the web applicaton will not allow the user to view the page. Therefore, attacker cannot bypass the web application flow
 
-The coding apply in donate & cart page
+The coding apply in donate & cart page: 
 ```
 <?php
 require 'config.php';
