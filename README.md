@@ -78,7 +78,30 @@ III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intef
 
 <H4>Threat: ______ </H4>
 
-<H4>Method Encounter: ______ </H4>
+<H4>Method Encounter </H4>
+The pattern for name will match a string if it contains only alphabetic characters and whitespace, allowing for an empty string as well.
+
+```
+$namePattern = "/^[a-zA-Z\s]*$/";
+```
+
+The pattern for username will match a string if it contains only alphanumeric characters (letters and digits) and underscores, allowing for an empty string as well.
+
+```
+$usernamePattern = "/^[a-zA-Z0-9_]*$/";
+```
+
+The pattern will match a string if it represents a valid email address.
+
+```
+$emailPattern = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
+```
+
+The pattern password will match a string if it meets the password requirements of having at least one lowercase letter, one uppercase letter, one digit, and a minimum length of 8 characters.
+
+```
+$passwordPattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/";
+```
 
 ### II. Authentication<a name="authentic"></a> 
 
