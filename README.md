@@ -76,7 +76,9 @@ III. Prevent any malicious attack such as SQL injection, XSS and CSRF from intef
 
 ### I. Input Validation<a name="iv"></a> 
 
-<H4>Threat: Identity Theft </H4>
+<H4>Threat: Exploitation Security of the Web Application </H4>
+
+When the web application does not validate input properly, it may affect the control and data flow of the program. Therefore the process control vulnerabilities will be expose and it can give attacker chance to launch cross-site scripting, sql injction and other related attack to steal the data.
 
 <H4>Method Encounter: Validate late and early using regex(whitelist) </H4>
 
