@@ -8,6 +8,7 @@ error_reporting(E_ALL); */
 
 
 if(isset($_POST["submit"])){
+    if (!empty($_POST['csrf_token']) && hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
   $usernameemail = $_POST["usernameemail"];
   $password = $_POST["password"];
   $result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$usernameemail'");
@@ -32,18 +33,15 @@ if(isset($_POST["submit"])){
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
       header("Location: home.php");
-    }
-    else{
-
+    } else {
       echo"<script> alert('Wrong Password'); </script>";
     }
-    
-  }
-  else{
+  } else {
     echo "<script> alert('User Not Registered'); </script>";
   }
-  
-
+} else {
+    echo "<script> alert('Invalid CSRF Token'); </script>";
+}
 }
 ?>
 <!DOCTYPE html>
@@ -117,7 +115,8 @@ if(isset($_POST["submit"])){
       <label for="password">Password : </label>
     <!-- Pattern to eliminate single quote (') in a string -->
       <input type="password" name="password" pattern="^[^'].*$" id = "password" required value=""> <br>
-      <button type="submit" name="submit">Login</button>
+      <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+  <button type="submit" name="submit">Login</button>
     </form>
     <br>
     <a href="registration.php">Registration</a>
