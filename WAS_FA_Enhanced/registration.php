@@ -8,6 +8,7 @@ if(!empty($_SESSION["id"])){
   header("Location: login.php");
 }
 if(isset($_POST["submit"])){
+  if (!empty($_POST['csrf_token']) && hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
   $name = $_POST["name"];
   $username = $_POST["username"];
   $email = $_POST["email"];
@@ -39,12 +40,16 @@ if(isset($_POST["submit"])){
       echo
       "<script> alert('Registration Successful'); </script>";
       header("Location: home.php");
-    }
-    else{
-      echo
-      "<script> alert('Password Does Not Match'); </script>";
+} else {
+      echo "<script> alert('Password Does Not Match'); </script>";
     }
   }
+  } else {
+      echo "<script> alert('Invalid CSRF Token'); </script>";
+  }
+}
+if (!isset($_SESSION['csrf_token'])) {
+  $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 ?>
 
@@ -127,7 +132,8 @@ if(isset($_POST["submit"])){
       <label for="confirmpassword">Confirm Password : </label>
       <input type="password" name="confirmpassword" id = "confirmpassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\d\s:])([^\s]){8,}$" 
       title="Password requirements: at least 8 characters long, one uppercase letter, one lowercase letter, one number, and one special character." required value=""> <br>
-      <button type="submit" name="submit">Register</button>
+      <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+  <button type="submit" name="submit">Register</button>
     </form>
     <br>
     <a href="login.php">Login</a>
