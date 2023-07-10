@@ -33,9 +33,8 @@ if(isset($_POST["submit"])){
   }
   else{
     if($password == $confirmpassword){
-      // $hashed_password = password_hash($password, PASSWORD_DEFAULT); //hash the password
-      // $hashed_email = md5($email); // Hash the email address using the md5 hashing function
-      $query = "INSERT INTO user VALUE ('','$name','$username','$email','$password')";
+      $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+      $query = "INSERT INTO user VALUE ('','$name','$username','$email','$hashed_password')";
       mysqli_query($conn, $query);
       echo
       "<script> alert('Registration Successful'); </script>";
