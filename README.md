@@ -24,7 +24,7 @@ III. Authorization ( Ikram )
 
 IV. XSS and CSRF Prevention ( Azrul )
 
-V. Database Security Principles ( Irfan )
+V. Database Security Principles ( Irfan & Anwar)
 
 VI. File Security Principles ( Anwar )
 
