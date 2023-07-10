@@ -1,27 +1,34 @@
 <?php
 require 'config.php';
-
 // Set error reporting to hide warnings
 error_reporting(0);
 
 /* ini_set('display_errors', 1);
 error_reporting(E_ALL); */
 
+
 if(isset($_POST["submit"])){
   $usernameemail = $_POST["usernameemail"];
   $password = $_POST["password"];
   $result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$usernameemail'");
-  $row = mysqli_fetch_assoc($result);
+  // $row = mysqli_fetch_assoc($result);
   
-
 
   //SQL Injection Prevention (Prepared Statement)
   $usernameemail = mysqli_real_escape_string($conn, $usernameemail);
   $password = mysqli_real_escape_string($conn, $password);
 
   if(mysqli_num_rows($result) == "1"){
-    if($password == $row['password']){
+    $row = mysqli_fetch_assoc($result);
+    $storedPassword = $row['password'];
+
+    // Check password from login and database
+    if(password_verify($password, $storedPassword)){
       session_start();
+      // Store username and password in session variables
+      $_SESSION["username"] = $usernameemail;
+      $_SESSION["password"] = $password;
+
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
       header("Location: home.php");
@@ -36,6 +43,7 @@ if(isset($_POST["submit"])){
     echo "<script> alert('User Not Registered'); </script>";
   }
   
+
 }
 ?>
 <!DOCTYPE html>
